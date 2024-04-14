@@ -1,0 +1,138 @@
+/* Use @import directive to import fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #d0cbf3;
+}
+
+.modal {
+	width: 80%;
+	margin: 40px auto;
+	background-color: #1a1832;
+	border-radius: 20px;
+	padding-top: 71px;
+	padding-left: 52px;
+	padding-right: 52px;
+	padding-bottom: 38px;
+	position: relative;
+}
+
+.modal h2 {
+	font-family: Merriweather;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 36px;
+	text-align: center;
+	color: #ffffff;
+	user-select: none;
+}
+
+.modal .grade-items {
+	margin-top: 64px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.grade-item {
+	width: 60px;
+	text-align: center;
+	font-family: Inter;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 33.89px;
+	color: #b1b9d8;
+	background-color: #111628;
+	border: 1px solid #2e3650;
+	padding: 13px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+.grade-item:hover {
+	background-color: red;
+	transition: 0.8s;
+}
+
+.grade-item:nth-child(n + 5):hover {
+	background-color: green;
+	transition: 0.8s;
+}
+
+.grade-message {
+	margin-top: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.grade-message p {
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.94px;
+	text-align: center;
+	color: #e7e7e7;
+}
+
+.modal-buttons {
+	margin-top: 64px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.failBtn {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.36px;
+	text-align: center;
+	padding: 13px 45px;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #7a58f4;
+	background: none;
+	cursor: pointer;
+}
+
+.pushBtn {
+	padding: 13px 45px;
+	background-color: #7a58f4;
+	color: #ffffff;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.xmark {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	transform: rotate(60deg);
+	cursor: pointer;
+	outline: none;
+}
+
+.xmark::after {
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	display: block;
+	position: absolute;
+	transform: rotate(60deg);
+	content: '';
+}
